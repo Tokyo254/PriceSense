@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PriceSense</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <main>
+      <div class="big-wrapper light">
+        <img src="./img/shape.png" alt="" class="shape" />
+        <header>
+          <div class="container">
+            <div class="logo">
+              <h3><i class='bx bxl-xing'></i>PriceSense</h3>
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" class="btn">Logout</a></li>
+              </ul>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+
+        <div class="showcase-area">
+          <div class="container">
+            <div class="left">
+              <div class="big-title">
+                <h1>Welcome! <br><span>
+                  Get Rewarded for Sharing your Receipt with Us. 
+              </span></h1>
+                <h1>Start Exploring now.</h1>
+              </div>
+              <p class="text">
+                Please Upload your Receipt,
+              </p>
+              <div class="cta">
+                <a href="#" class="btn">Upload</a>
+              </div>
+            </div>
+
+            <div class="right">
+              
+              <div class="container2">
+                <img src="./img/shape.png" alt="Person Image" class="person" />
+                <div class="overlay"></div>
+
+                <div class="content">
+                <h1>Product Search</h1>
+                <form id="search-form">
+                  <input type="text" id="search-input" placeholder=" Search...">
+                  <input type="submit" class="submit-btn"  value="Search">
+                </form>
+                <div id="product-list"></div>
+              </div>
+              <div id="cart">
+                <h2>Cart</h2>
+                <table id="cart-table">
+                  <tbody id="cart-items"></tbody>
+                  <thead>
+                    <tr>
+                      <!--  <th>Product</th>
+                      
+                      <th>Naivas</th>
+                      <th>Carrefour</th>
+                      <th>Chandarana</th>
+                      <th>Quickmart</th>
+                      <th>Onn the Way</th>
+                      <th>Jumia</th>
+                      <th>Quantity</th>
+                      <th>Total</th>
+                     Add more store columns as needed 
+                      <th>Action</th> -->
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-area">
+          <div class="container">
+            <button class="toggle-btn">
+              <i class="far fa-moon"></i>
+              <i class="far fa-sun"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript Files -->
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="./script.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
