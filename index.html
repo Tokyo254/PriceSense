@@ -1,113 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PriceSense</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <main>
-      <div class="big-wrapper light">
-        <img src="./img/shape.png" alt="" class="shape" />
-        <header>
-          <div class="container">
-            <div class="logo">
-              <h3><i class='bx bxl-xing'></i>PriceSense</h3>
-            </div>
-
-            <div class="links">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#" class="btn">Logout</a></li>
-              </ul>
-            </div>
-
-            <div class="overlay"></div>
-
-            <div class="hamburger-menu">
-              <div class="bar"></div>
-            </div>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#"><i class='bx bxl-xing'></i>PriceSense.</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="./login and sign up/login-user.php">Login</a></li>
+          <li><a href="./login and sign up/signup-user.php">Register</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
           </div>
-        </header>
-
-        <div class="showcase-area">
-          <div class="container">
-            <div class="left">
-              <div class="big-title">
-                <h1>Welcome! <br><span>
-                  Get Rewarded for Sharing your Receipt with Us. 
-              </span></h1>
-                <h1>Start Exploring now.</h1>
-              </div>
-              <p class="text">
-                Please Upload your Receipt,
-              </p>
-              <div class="cta">
-                <a href="#" class="btn">Upload</a>
-              </div>
-            </div>
-
-            <div class="right">
-              
-              <div class="container2">
-                <img src="./img/shape.png" alt="Person Image" class="person" />
-                <div class="overlay"></div>
-
-                <div class="content">
-                <h1>Product Search</h1>
-                <form id="search-form">
-                  <input type="text" id="search-input" placeholder=" Search...">
-                  <input type="submit" class="submit-btn"  value="Search">
-                </form>
-                <div id="product-list"></div>
-              </div>
-              <div id="cart">
-                <h2>Cart</h2>
-                <table id="cart-table">
-                  <tbody id="cart-items"></tbody>
-                  <thead>
-                    <tr>
-                      <!--  <th>Product</th>
-                      
-                      <th>Naivas</th>
-                      <th>Carrefour</th>
-                      <th>Chandarana</th>
-                      <th>Quickmart</th>
-                      <th>Onn the Way</th>
-                      <th>Jumia</th>
-                      <th>Quantity</th>
-                      <th>Total</th>
-                     Add more store columns as needed 
-                      <th>Action</th> -->
-                    </tr>
-                  </thead>
-                </table>
-              </div>
-              </div>
-            </div>
-          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
 
-        <div class="bottom-area">
-          <div class="container">
-            <button class="toggle-btn">
-              <i class="far fa-moon"></i>
-              <i class="far fa-sun"></i>
-            </button>
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Welcome,</div>
+          <div class="text-two"> Get Rewarded for Sharing your Receipt with Us. </div>
+          <div class="text-three">Also do Price Comparison.</div>
+          <div class="text-four"></div>
+        </div>
+        <div class="button">
+          <button>Register Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Us</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="./Images/pexels-fauxels-3183165.jpg" alt="" />
+          </div>
+          <div class="right">
+            <div class="topic">Price Comparison</div>
+            <p>
+              PriceSense is a retail chain partner that enables our clients to perform price comparison from various stores on a real time basis. 
+              We enable users to save by bulding a cart across different stores. 
+            </p>
+            <div class="button">
+              <button>Contact Us</button>
+            </div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
 
-    <!-- JavaScript Files -->
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>Our Services</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">Business Support</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus natus tenetur tempora? Quasi, rem quas omnis. Porro rem aspernatur reiciendis ut praesentium minima ad, quos, officia! Illo libero, et, distinctio repellat sed nesciunt est modi quaerat placeat. Quod molestiae, alias?</p>
+            <div class="experience">
+              <div class="num">10</div>
+              <div class="exp">
+                Years Of <br />
+                Experience
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">Client Rating</div>
+              <div class="per">9.5</div>
+            </div>
+            <div class="box">
+              <div class="topic">Customer Experience</div>
+              <div class="per">8.5</div>
+            </div>
+            <div class="box">
+              <div class="topic">Fast</div>
+              <div class="per">8.0</div>
+            </div>
+            <div class="box">
+              <div class="topic">Customer Care Service</div>
+              <div class="per">8.9</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <!-- My Services Section Start -->
+    <section class="services" id="services">
+      <div class="content">
+        <div class="title"><span>Our Services</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Business Support</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="topic">Price Comparison</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="topic">Cart Building</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fab fa-android"></i>
+            </div>
+            <div class="topic">Consultation</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-camera-retro"></i>
+            </div>
+            <div class="topic">Pricing</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-tablet-alt"></i>
+            </div>
+            <div class="topic">Consultation</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact Us</span></div>
+        <div class="text">
+          <div class="topic">Any enquiries?</div>
+          <p>Reach out </p>
+          <div class="button">
+            <button>Send a message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span>Created By <a href="#">@grandDuke</a> | &#169; 2023 All Rights Reserved</span>
+      </div>
+    </footer>
+
     <script src="./script.js"></script>
-    <script src="./app.js"></script>
   </body>
 </html>
