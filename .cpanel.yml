@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/filemanager/repositories/PriceSense
+    - /bin/cp -R PriceSense $DEPLOYPATH
