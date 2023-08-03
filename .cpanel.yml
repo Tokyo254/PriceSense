@@ -1,0 +1,17 @@
+##### THIS ALLOWS US TO DEPLOY THE SITE FROM A GIT REPO ######
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/kgt97mi27aim/public_html/
+    - /bin/cp -R .vscode $DEPLOYPATH
+    - /bin/cp -R Images $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R login and sign up $DEPLOYPATH
+    - /bin/cp -R .gitattributes $DEPLOYPATH
+    - /bin/cp -R README.md $DEPLOYPATH
+    - /bin/cp -R app.js $DEPLOYPATH
+    - /bin/cp -R index.html $DEPLOYPATH
+    - /bin/cp -R script.js $DEPLOYPATH
+    - /bin/cp -R style.css $DEPLOYPATH
+
+    /bin/cp index.html $DEPLOYPATH
