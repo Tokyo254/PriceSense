@@ -15,7 +15,7 @@
             <div class="navbar">
                 <div class="logo"><a href="#"><i class='bx bxl-xing'></i>PriceSense.</a></div>
                 <ul class="menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="./redirect_home.php">Home</a></li>
                 <li><a href="./signup-user.php">Register</a></li>
                 <div class="cancel-btn">
                     <i class="fas fa-times"></i>
