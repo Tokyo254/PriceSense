@@ -4,7 +4,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>PriceSense</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -66,14 +69,41 @@
           <div class="right">
             <div class="topic">Price Comparison</div>
             <p>
-              PriceSense is a retail chain partner that enables our clients to perform price comparison from various stores on a real time basis.By leveraging our platform's price comparison and dynamic pricing tools, you can attract more customers with competitive prices. As a result, you'll experience increased sales and revenue growth.
-              We're committed to your success. Join our platform today and unlock the full potential of your business through price comparison and enhanced competition. Experience the advantages of a supportive business environment that fosters growth and prosperity.
+              By leveraging our platform's price comparison and dynamic pricing tools, you can attract more customers with competitive prices. As a result, you'll experience increased sales and revenue growth.
+              We're committed to your success. Join our platform today. <br/>
                Together, let's revolutionize the way you do business! 
             </p>
-            <div class="button">
-              <button id="contact">Contact Us</button>
-            </div>
+       
           </div>
+        </div>
+        <div class="title"><span> </span></div>
+        <div class="about-details">         
+          <div class="right">
+            <div class="topic">Competitor Analysis</div>
+            <p>
+              Detailed competitor analysis, giving you valuable <br/>
+               information about your rivals' <br/>
+              pricing strategies, promotions, and product offerings.
+            </p>
+          </div>
+          <div class="left">
+            <img src="./Images/pexels-lisa-fotios-1402407.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="title"><span> </span></div>
+        <div class="about-details">   
+          <div class="left">
+            <img src="./Images/pexels-michael-burrows-7129160.jpg" alt="" />
+          </div>      
+          <div class="right">
+            <div class="topic">Price Monitoring and Notifications</div>
+            <p>
+              Receive timely notifications so you can react  <br/>
+              quickly and maintain your competitive edge.
+            </p>
+          </div>
+          
         </div>
       </div>
     </section>
@@ -82,7 +112,7 @@
     <!-- Section Tag and Other Div will same where we need to put same CSS -->
     <section class="skills" id="skills">
       <div class="content">
-        <div class="title"><span>Objective</span></div>
+        <div class="title"><span>Scope</span></div>
         <div class="skills-details">
           <div class="text">
             <div class="topic">Our Mission</div>
@@ -118,7 +148,7 @@
         </div>
       </div>
     </section>
-
+ 
     <!-- My Services Section Start -->
     <section class="services" id="services">
       <div class="content">
@@ -169,7 +199,47 @@
         </div>
       </div>
     </section>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="./Images/pexels-clem-onojeghuo-375889.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Unleash the Power of Real-Time Price Comparison.</span>
+            <h2>
+              Cutting-edge price comparison system that puts  <br />
+               the competitive advantage in your hands.
+            </h2>
+            <a href="#" class="button">learn More</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="./Images/pexels-mikael-blomkvist-6483626.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Unlock the Potential of Your Business.</span>
+            <h2>
+              Embrace the power of PriceSense today <br />
+              Make data-driven decisions backed by cutting-edge technology.
+            </h2>
+            <a href="#" class="button">learn More</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="./Images/pexels-timur-saglambilek-185576.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Dynamic Pricing Tools for Increased Attraction.</span>
+            <h2>
+              Our dynamic pricing tools empower you to <br />
+              tailor your prices strategically.
+            </h2>
+            <a href="#" class="button">learn More</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
     <!-- Contact Me section Start -->
     <section class="contact" id="contact">
       <div class="content">
@@ -190,7 +260,23 @@
         <span>Created By <a href="#">@grandDuke</a> | &#169; 2023 All Rights Reserved</span>
       </div>
     </footer>
-
-    <script src="./script.js"></script>
+  <!-- Swiper JS -->
+  <script src="JS/swiper-bundle.min.js"></script>
+    <script src="./JS/script.js"></script>
+       <!-- Initialize Swiper -->
+       <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
   </body>
 </html>
